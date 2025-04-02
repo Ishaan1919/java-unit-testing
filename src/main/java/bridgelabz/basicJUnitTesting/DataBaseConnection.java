@@ -19,3 +19,11 @@ public class DataBaseConnection {
         System.out.println("Disconnected Succefull: " + s);
     }
 }
+
+
+//Connected Succefully: MySql 1
+//Disconnected Succefull: MySql 1
+//Connected Succefully: MySql 2
+//Disconnected Succefull: MySql 2
+//Connected Succefully: MySql 3
+//Disconnected Succefull: MySql 3
