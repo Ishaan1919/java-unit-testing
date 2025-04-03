@@ -1,11 +1,11 @@
 package bridgelabz.basicJUnitTesting;
 
 import org.junit.Before;
-import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.*;
 import static org.junit.Assert.*;
 
 public class ListManagerTest {
