@@ -13,9 +13,10 @@ public class UserRegistration {
 
     public boolean registerUser(){
 
-        String regexName = "^(?=\\s)[a-zA-Z]{3,}$";
+        String regexName = "^[a-zA-Z]+\\s?[a-zA-Z]*$";
         String regexEmail = "^[a-zA-Z0-9][\\w.]*@[a-z]+\\.[a-z]{2,}$";
-        String regexPassword = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[\\d])(?=.*[!@#$%])[\\w]{8,}$";
+        String regexPassword = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%])([a-zA-Z0-9!@#$%]{8,})$";
+
 
         boolean name = this.userName.matches(regexName);
         boolean email = this.email.matches(regexEmail);

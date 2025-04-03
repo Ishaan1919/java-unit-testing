@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 public class UserRegistrationTest {
     UserRegistration ur;
     @ParameterizedTest
-    @CsvSource({" Ishaan gupta, ishaan@gmail.com,H1Elllo@@ ", " ishaan, ishaan.be21@gmail.com, HHF@2jhfh"})
+    @CsvSource({"Ishaan gupta, ishaan@gmail.com,H1Ell$$lo@@jjjjjj ", "ishaan, ishaan.be21@gmail.com, HHF@2jhfDDh"})
     public void shouldRegisterUser(String name, String email, String password){
         ur = new UserRegistration(name,email,password);
         assertTrue(ur.registerUser());
